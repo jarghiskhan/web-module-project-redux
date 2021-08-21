@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useReducer } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { connect } from 'react-redux';
 
@@ -10,6 +10,8 @@ import MovieHeader from './components/MovieHeader';
 
 import AddMovieForm from './components/AddMovieForm';
 import FavoriteMovieList from './components/FavoriteMovieList';
+// import reducer, { initialState } from "./reducers/movieReducer";
+
 
 const App = props => {
   const displayFavorites = true;
